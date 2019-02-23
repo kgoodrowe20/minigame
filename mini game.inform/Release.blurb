@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6M62
 
-status "/Users/kgoodrowe20/Desktop/comp sci/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/kgoodrowe20/Desktop/comp sci/mini game.inform/Build/StatusCblorb.html"
+status "/Users/kgoodrowe20/Desktop/comp sci/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/kgoodrowe20/Documents/GitHub/minigame/mini game.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/Users/kgoodrowe20/Desktop/comp sci/mini game.inform"
-release to "/Users/kgoodrowe20/Desktop/comp sci/mini game.materials/Release"
+project folder "/Users/kgoodrowe20/Documents/GitHub/minigame/mini game.inform"
+release to "/Users/kgoodrowe20/Documents/GitHub/minigame/mini game.materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "mini game.gblorb"
-storyfile "/Users/kgoodrowe20/Desktop/comp sci/mini game.inform/Build/output.ulx" include
-ifiction "/Users/kgoodrowe20/Desktop/comp sci/mini game.inform/Metadata.iFiction" include
+storyfile "/Users/kgoodrowe20/Documents/GitHub/minigame/mini game.inform/Build/output.ulx" include
+ifiction "/Users/kgoodrowe20/Documents/GitHub/minigame/mini game.inform/Metadata.iFiction" include
 cover "/Users/kgoodrowe20/Desktop/comp sci/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 picture 1 "/Users/kgoodrowe20/Desktop/comp sci/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 
