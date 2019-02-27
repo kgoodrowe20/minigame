@@ -32,6 +32,7 @@ A hallway with walls of stone, decorated with relics and carvings. The only visi
             <child nodeId="node-1076"></child>
             <child nodeId="node-1069"></child>
             <child nodeId="node-1052"></child>
+            <child nodeId="node-1448"></child>
             <child nodeId="node-1178"></child>
             <child nodeId="node-1051"></child>
             <child nodeId="node-1050"></child>
@@ -791,9 +792,80 @@ yuh
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1179"></child>
+        <children><child nodeId="node-1453"></child>
+            <child nodeId="node-1179"></child>
             <child nodeId="node-1381"></child>
+            <child nodeId="node-1447"></child>
         </children>
+    </item>
+    <item nodeId="node-1447">
+        <command xml:space="preserve">turn on lever</command>
+        <result xml:space="preserve">The wall shivers and shakes as the carvings move away to reveal a secret chamber.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1457"></child>
+        </children>
+    </item>
+    <item nodeId="node-1457">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Secret Chamber
+A room made of carved out stone.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1458"></child>
+        </children>
+    </item>
+    <item nodeId="node-1458">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Ancient Hall
+A hallway with walls of stone, decorated with relics and carvings. The only visible passageway is the wooden door to the east.
+
+ 
+
+You can also see a lever here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1459"></child>
+        </children>
+    </item>
+    <item nodeId="node-1459">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1460"></child>
+        </children>
+    </item>
+    <item nodeId="node-1460">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1467"></child>
+        </children>
+    </item>
+    <item nodeId="node-1467">
+        <command xml:space="preserve">pull lever</command>
+        <result xml:space="preserve">Try turning the lever on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1468"></child>
+        </children>
+    </item>
+    <item nodeId="node-1468">
+        <command xml:space="preserve">use lever</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1381">
         <command xml:space="preserve">pull lever</command>
@@ -840,6 +912,44 @@ Secret Chamber
     </item>
     <item nodeId="node-1179">
         <command xml:space="preserve">press shield button</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1453">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the wooden door)
+
+First Chamber
+A stone room with a stone pillar in the center of the room.
+
+ 
+
+The wall shivers and shakes as the carvings move away to reveal a secret chamber.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1454"></child>
+        </children>
+    </item>
+    <item nodeId="node-1454">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Ancient Hall
+A hallway with walls of stone, decorated with relics and carvings. The only visible passageway is the wooden door to the east.
+
+ 
+
+You can also see a lever here.
+
+The wall shivers and shakes as the carvings move away to reveal a secret chamber.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1448">
+        <command xml:space="preserve">x carving</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
@@ -1815,17 +1925,29 @@ A stone room with a stone pillar in the center of the room.
 
  
 
+The wall shivers and shakes as the carvings move away to reveal a secret chamber.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1163"></child>
             <child nodeId="node-1153"></child>
             <child nodeId="node-1148"></child>
+            <child nodeId="node-1450"></child>
             <child nodeId="node-1147"></child>
         </children>
     </item>
     <item nodeId="node-1147">
         <command xml:space="preserve">x stone pillar</command>
         <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1450">
+        <command xml:space="preserve">x pillar</command>
+        <result xml:space="preserve">A dark grey pillar made of solid stone. Perhaps it could be pushed?
+
+The wall shivers and shakes as the carvings move away to reveal a secret chamber.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

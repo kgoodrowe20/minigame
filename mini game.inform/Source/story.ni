@@ -3,21 +3,16 @@
 ['understand' section]
 
 understand "inspect [something]" as examining.
-
 understand "roll [something]" as pushing.
-
+understand "carving"  as carvings.
+understand "relic" as relics.
+understand "pillar" as pillars.
 understand "beetle" as golden beetle.
-
 understand "bug" as golden beetle.
-
 understand "gold beetle" as golden beetle.
-
 understand "gold bug" as golden beetle.
-
 understand "sword lever" as the lever.
-
 understand "sword" as the lever.
-
 understand "lever" as the lever
 
 [ancient hall]
@@ -35,29 +30,32 @@ Ancient Hall is a room.  "A hallway with walls of stone, decorated with relics a
 Walls are scenery inside Ancient hall. "Strange carvings depicting monsters and warriors cover the surface of the old stone."
 
 Carvings are scenery inside Ancient hall. 
-[Pressing shield would reveal another room, where the orb is used to recieve the treasure.]
+[Using lever would reveal another room, where the orb is used to recieve the treasure.]
 
  Instead of examining carvings:
         move the lever to the ancient hall;
         say "Upon closer inspection of the carvings, you can see that one of the warriors' swords is actually a lever in the wall."
 
-Secret Chamber is a room.
+Secret Chamber is a room. "A room made of carved out stone."
 
-the lever is a device. 
+the lever is a device. it is switched off. 
+
+instead of pulling the lever:
+	say "Try turning the lever on."
 
 Relics are scenery inside Ancient Hall. 
 
-Relic are scenery inside Ancient Hall. 
-
 The wooden door is east of Ancient Hall and west of First Chamber. The wooden door is an door. " "
 
-Every turn:
-	If the lever is switched on, change north exit of ancient hall to secret chamber;
-	say "The wall shivers and shakes as the carvings move away to reveal a secret chamber."
-
+Instead of switching on lever:
+	change north exit of ancient hall to secret chamber;
+	change south exit of secret chamber to ancient hall;
+	say "The wall shivers and shakes as the carvings move away to reveal a secret chamber."	
+		
 [first puzzle takes place in these four chambers]
 [puzzle solution:
-	put the granite monument into pedestal, which reveals a glass orb. The glass orb will be used for the next puzzle.]
+	
+	put the granite monument found in the ancient hall by inspecting the relics into pedestal, which reveals a glass orb. The glass orb will be used for the next puzzle.]
 
 First Chamber is a room.  "A stone room with a stone pillar in the center of the room."
 
@@ -68,10 +66,6 @@ Second Chamber is a room. It is east of First Chamber and north of Fourth Chambe
 granite monument is a thing. The description of the granite monument is "A small statuette, likened to a lion."
 
   Instead of examining relics:
-        move the granite monument to ancient hall;
-        say "Various clay pots and urns are scattered against the edge of the hallway. Between two particularly mishapen pieces of ceramic, you spot a granite monument."
-
-Instead of examining relic:
         move the granite monument to ancient hall;
         say "Various clay pots and urns are scattered against the edge of the hallway. Between two particularly mishapen pieces of ceramic, you spot a granite monument."
 
