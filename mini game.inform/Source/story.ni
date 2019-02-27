@@ -6,20 +6,54 @@ understand "inspect [something]" as examining.
 
 understand "roll [something]" as pushing.
 
+understand "beetle" as golden beetle.
+
+understand "bug" as golden beetle.
+
+understand "gold beetle" as golden beetle.
+
+understand "gold bug" as golden beetle.
+
+understand "sword lever" as the lever.
+
+understand "sword" as the lever.
+
+understand "lever" as the lever
+
 [ancient hall]
+
+golden beetle is a thing. The description of the golden beetle is "A small bug that sheens like solid gold."
+
+  Instead of examining player:
+        move the golden beetle to ancient hall;
+        say "You're an adventurer, and you climb into dungeons like these for treasure in order to make a living. You are dressed in jeans and a t-shirt.
+
+You realize that there's a golden beetle on your shirt, and you flick it onto the ground. It scurries away and starts glowing at the center of the ancient hall floor."
 
 Ancient Hall is a room.  "A hallway with walls of stone, decorated with relics and carvings. The only visible passageway is the wooden door to the east."
 
 Walls are scenery inside Ancient hall. "Strange carvings depicting monsters and warriors cover the surface of the old stone."
 
-Carvings are scenery inside Ancient hall. "Upon closer inspection of the carvings, you can see that one of the warriors' shields can be pushed into the wall."
+Carvings are scenery inside Ancient hall. 
 [Pressing shield would reveal another room, where the orb is used to recieve the treasure.]
+
+ Instead of examining carvings:
+        move the lever to the ancient hall;
+        say "Upon closer inspection of the carvings, you can see that one of the warriors' swords is actually a lever in the wall."
+
+Secret Chamber is a room.
+
+the lever is a device. 
 
 Relics are scenery inside Ancient Hall. 
 
 Relic are scenery inside Ancient Hall. 
 
 The wooden door is east of Ancient Hall and west of First Chamber. The wooden door is an door. " "
+
+Every turn:
+	If the lever is switched on, change north exit of ancient hall to secret chamber;
+	say "The wall shivers and shakes as the carvings move away to reveal a secret chamber."
 
 [first puzzle takes place in these four chambers]
 [puzzle solution:
@@ -43,7 +77,9 @@ Instead of examining relic:
 
 pillars is scenery inside second chamber. "A pillar made of marble. Perhaps it could be pushed?"
 
-Third Chamber is a room. It is west of Fourth Chamber and south of First Chamber. "A granite room, with two granite spheres in the room. There appears to be a pedestal in the center of the room. The pedestal is irregular, and can be described more like a pillar with a rectangular hole cut into it. "
+[Third Chamber is a room. It is west of Fourth Chamber and south of First Chamber. "A granite room, with two granite spheres in the room. There appears to be a pedestal in the center of the room. The pedestal is irregular, and can be described more like a pillar with a rectangular hole cut into it. "]
+
+Third chamber is a room. Third Chamber is west of Fourth Chamber and south of First Chamber. "[if the player is holding the orb] A granite room with two granite spheres in the room. That's all it is, now. [otherwise] A granite room, with two granite spheres in the room. There appears to be a pedestal in the center of the room. The pedestal is irregular, and can be described more like a pillar with a rectangular hole cut into it. [end if]"
 
 spheres is scenery in third chamber. "A granite sphere. Perhaps it could be rolled?"
 
@@ -63,9 +99,14 @@ instead of inserting granite monument into pedestal:
 	say "The monument begins to vibrate, and the eyes glow. It's mouth opens and reveals a glass orb.";
 	move granite monument to third chamber.
 	
-[when orb is taken:
+instead of taking orb:
 	say "The monument spins inside the pedestal, and the pedestal sinks into the floor.";
 	remove granite monument from play;
-	remove pedestal from play.
+	remove pedestal from play;
+	move orb to player;
 	
-Removing clutter from the game world]
+instead of dropping orb:
+	say "Why would you want to do that?"
+	
+	
+[Removing clutter from the game world]
