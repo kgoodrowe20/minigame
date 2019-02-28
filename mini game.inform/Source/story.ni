@@ -19,6 +19,11 @@ understand "lever" as the lever
 
 golden beetle is a thing. The description of the golden beetle is "A small bug that sheens like solid gold."
 
+instead of putting orb on stand:
+	move orb to secret chamber;
+	say "The orb begins to glow and spin similarly to how the monument did. The stand opens to reveal the golden treasure.";
+	move gold treasure to secret chamber.
+
   Instead of examining player:
         move the golden beetle to ancient hall;
         say "You're an adventurer, and you climb into dungeons like these for treasure in order to make a living. You are dressed in jeans and a t-shirt.
@@ -93,6 +98,11 @@ instead of inserting granite monument into pedestal:
 	say "The monument begins to vibrate, and the eyes glow. It's mouth opens and reveals a glass orb.";
 	move granite monument to third chamber.
 	
+instead of putting granite monument on pedestal:
+	move orb to third chamber;
+	say "The monument begins to vibrate, and the eyes glow. It's mouth opens and reveals a glass orb.";
+	move granite monument to third chamber.
+	
 instead of taking orb:
 	say "The monument spins inside the pedestal, and the pedestal sinks into the floor.";
 	remove granite monument from play;
@@ -102,14 +112,9 @@ instead of taking orb:
 instead of dropping orb:
 	say "Why would you want to do that?"
 	
-stand is scenery in secret chamber. It is an open openable container. The description is "A stand made of what looks like pumice. There is a rock on top and a slot below that. Perhaps something could be inserted into it."
+stand is scenery in secret chamber. It is an open openable container. The description is "A stand made of what looks like pumice."
 
 gold treasure is a thing. the description is "A solid gold statue of a warrior."
-
-instead of inserting orb into stand:
-	move orb to secret chamber;
-	say "The orb begins to glow and spin similarly to how the monument did. The stand opens to reveal the golden treasure.";
-	move gold treasure to secret chamber.
 	
 instead of taking gold treasure:
 	say "You take the treasure and leave the dungeon. This is sure to net you many, many bundles of cash.";
