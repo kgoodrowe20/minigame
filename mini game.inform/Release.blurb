@@ -10,7 +10,7 @@ release to "/Users/kgoodrowe20/Documents/GitHub/minigame/mini game.materials/Rel
 
 ! Blorb instructions
 
-storyfile leafname "mini game.gblorb"
+storyfile leafname "dungeon.gblorb"
 storyfile "/Users/kgoodrowe20/Documents/GitHub/minigame/mini game.inform/Build/output.ulx" include
 ifiction "/Users/kgoodrowe20/Documents/GitHub/minigame/mini game.inform/Metadata.iFiction" include
 cover "/Users/kgoodrowe20/Desktop/comp sci/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
@@ -21,7 +21,7 @@ picture 1 "/Users/kgoodrowe20/Desktop/comp sci/Inform.app/Contents/Resources/Int
 placeholder [IFID] = "F878FEE4-9C25-4313-BEE0-70646A8433DC"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2019"
-placeholder [TITLE] = "mini game"
+placeholder [TITLE] = "dungeon"
 placeholder [AUTHOR] = "kgoodrowe20"
 placeholder [BLURB] = "A work of interactive fiction."
 

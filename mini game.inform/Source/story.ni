@@ -1,4 +1,4 @@
-"mini game" by kgoodrowe20
+"dungeon" by kgoodrowe20
 
 ['understand' section]
 
