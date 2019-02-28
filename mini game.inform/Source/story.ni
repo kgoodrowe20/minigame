@@ -36,7 +36,7 @@ Carvings are scenery inside Ancient hall.
         move the lever to the ancient hall;
         say "Upon closer inspection of the carvings, you can see that one of the warriors' swords is actually a lever in the wall."
 
-Secret Chamber is a room. "A room made of carved out stone."
+Secret Chamber is a room. "A room made of carved out stone. You can see a stand here."
 
 the lever is a device. it is switched off. 
 
@@ -50,7 +50,7 @@ The wooden door is east of Ancient Hall and west of First Chamber. The wooden do
 Instead of switching on lever:
 	change north exit of ancient hall to secret chamber;
 	change south exit of secret chamber to ancient hall;
-	say "The wall shivers and shakes as the carvings move away to reveal a secret chamber."	
+	say "The wall shivers and shakes as the carvings move away to reveal a secret chamber to the north."	
 		
 [first puzzle takes place in these four chambers]
 [puzzle solution:
@@ -102,5 +102,15 @@ instead of taking orb:
 instead of dropping orb:
 	say "Why would you want to do that?"
 	
+stand is scenery in secret chamber. It is an open openable container. The description is "A stand made of what looks like pumice. There is a rock on top and a slot below that. Perhaps something could be inserted into it."
+
+gold treasure is a thing. the description is "A solid gold statue of a warrior."
+
+instead of inserting orb into stand:
+	move orb to secret chamber;
+	say "The orb begins to glow and spin similarly to how the monument did. The stand opens to reveal the golden treasure.";
+	move gold treasure to secret chamber.
 	
-[Removing clutter from the game world]
+instead of taking gold treasure:
+	say "You take the treasure and leave the dungeon. This is sure to net you many, many bundles of cash.";
+	end the story.
