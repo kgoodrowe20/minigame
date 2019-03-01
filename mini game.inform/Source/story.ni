@@ -143,5 +143,5 @@ stand is scenery in secret chamber. It is an open openable container. The descri
 gold treasure is a thing. the description is "A solid gold statue of a warrior."
 	
 instead of taking gold treasure:
-	say "You take the treasure and leave the dungeon. This is sure to net you many, many bundles of cash.";
+	say "[If player is holding the golden beetle] The golden beetle that you are holding jumps onto the treasure and begins the buzz. The treasure duplicates in front of your very eyes! You'll be rich for the rest of your life! [otherwise]You take the treasure and leave the dungeon. This is sure to net you many, many bundles of cash.";
 	end the story saying "You won!".
