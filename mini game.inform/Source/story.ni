@@ -17,6 +17,22 @@ understand "lever" as the lever
 
 [ancient hall]
 
+instead of pushing pillars:
+	say "It barely budges."
+
+instead of pushing pillar:
+	say "It barely budges."
+
+instead of pushing spheres:
+	say "It barely budges."
+
+instead of pushing pyramids:
+	say "It barely budges."
+
+instead of putting granite monument on stand:
+	say "The stand sinks into the ground, and the monument with it. The dungeon collapses and you are lost, along with the treasure.";
+	end the story saying "You lose."
+	
 golden beetle is a thing. The description of the golden beetle is "A small bug that sheens like solid gold."
 
 instead of putting orb on stand:
@@ -41,7 +57,7 @@ Carvings are scenery inside Ancient hall.
         move the lever to the ancient hall;
         say "Upon closer inspection of the carvings, you can see that one of the warriors' swords is actually a lever in the wall."
 
-Secret Chamber is a room. "A room made of carved out stone. You can see a stand here."
+Secret Chamber is a room. "A room made of carved out stone. You can see a glass stand here."
 
 the lever is a device. it is switched off. 
 
@@ -62,11 +78,15 @@ Instead of switching on lever:
 	
 	put the granite monument found in the ancient hall by inspecting the relics into pedestal, which reveals a glass orb. The glass orb will be used for the next puzzle.]
 
-First Chamber is a room.  "A stone room with a stone pillar in the center of the room."
+First Chamber is a room.  "A stone room with a stone pillar in the center of the room.
+
+The Second Chamber is to the east, and the Third Chamber is south."
 
 pillar is scenery inside first chamber.  "A dark grey pillar made of solid stone. Perhaps it could be pushed?"
 
-Second Chamber is a room. It is east of First Chamber and north of Fourth Chamber. "A marble room with two marble pillars in opposite corners of the room."
+Second Chamber is a room. It is east of First Chamber and north of Fourth Chamber. "A marble room with two marble pillars in opposite corners of the room.
+
+The First Chamber is to the west, and the Fourth Chamber is south."
 
 granite monument is a thing. The description of the granite monument is "A small statuette, likened to a lion."
 
@@ -78,7 +98,11 @@ pillars is scenery inside second chamber. "A pillar made of marble. Perhaps it c
 
 [Third Chamber is a room. It is west of Fourth Chamber and south of First Chamber. "A granite room, with two granite spheres in the room. There appears to be a pedestal in the center of the room. The pedestal is irregular, and can be described more like a pillar with a rectangular hole cut into it. "]
 
-Third chamber is a room. Third Chamber is west of Fourth Chamber and south of First Chamber. "[if the player is holding the orb] A granite room with two granite spheres in the room. That's all it is, now. [otherwise] A granite room, with two granite spheres in the room. There appears to be a pedestal in the center of the room. The pedestal is irregular, and can be described more like a pillar with a rectangular hole cut into it. [end if]"
+Third chamber is a room. Third Chamber is west of Fourth Chamber and south of First Chamber. "[if the player is holding the orb] A granite room with two granite spheres in the room. That's all it is, now. 
+
+The First Chamber is to the north and the Fourth Chamber is east. [otherwise] A granite room, with two granite spheres in the room. There appears to be a pedestal in the center of the room. The pedestal is irregular, and can be described more like a pillar with a rectangular hole cut into it. 
+
+The First Chamber is to the north and the Fourth Chamber is east. [end if]"
 
 spheres is scenery in third chamber. "A granite sphere. Perhaps it could be rolled?"
 
@@ -87,7 +111,9 @@ pedestal is scenery in third chamber. It is an open openable container.
 instead of examining pedestal:
 	say "Perhaps some kind of item belongs in here?"
 
-Fourth Chamber is a room. "A ceramic room with four ceramic pyramids."
+Fourth Chamber is a room. "A ceramic room with four ceramic pyramids.
+
+The Second Chamber is to the north and the Third Chamber is to the west."
 
 pyramids is scenery in fourth chamber. "A ceramic pyramid, Perhaps it could be pushed?"
 
@@ -112,10 +138,10 @@ instead of taking orb:
 instead of dropping orb:
 	say "Why would you want to do that?"
 	
-stand is scenery in secret chamber. It is an open openable container. The description is "A stand made of what looks like pumice."
+stand is scenery in secret chamber. It is an open openable container. The description is "A stand made of what looks like glass, but upon closer inspection looks greener than it should be."
 
 gold treasure is a thing. the description is "A solid gold statue of a warrior."
 	
 instead of taking gold treasure:
 	say "You take the treasure and leave the dungeon. This is sure to net you many, many bundles of cash.";
-	end the story.
+	end the story saying "You won!".
