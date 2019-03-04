@@ -2,10 +2,14 @@
 
 ['understand' section]
 
+understand "stone" as walls.
+understand "hallway" as walls.
 understand "inspect [something]" as examining.
 understand "roll [something]" as pushing.
 understand "carving"  as carvings.
 understand "relic" as relics.
+understand "stone pillar" as pillar.
+understand "marble pillars" as pillars.
 understand "pillar" as pillars.
 understand "beetle" as golden beetle.
 understand "bug" as golden beetle.
@@ -13,7 +17,13 @@ understand "gold beetle" as golden beetle.
 understand "gold bug" as golden beetle.
 understand "sword lever" as the lever.
 understand "sword" as the lever.
-understand "lever" as the lever
+understand "lever" as the lever.
+understand "ceramic pyramids" as pyramids.
+understand "ceramic pyramid" as pyramid.
+understand "four ceramic pyramids" as pyramids.
+understand "granite spheres" as spheres.
+understand "sphere" as spheres.
+understand "granite sphere" as spheres.
 
 [ancient hall]
 
@@ -104,7 +114,7 @@ The First Chamber is to the north and the Fourth Chamber is east. [otherwise] A 
 
 The First Chamber is to the north and the Fourth Chamber is east. [end if]"
 
-spheres is scenery in third chamber. "A granite sphere. Perhaps it could be rolled?"
+spheres is scenery in third chamber. "A set of granite spheres. Perhaps they could be rolled?"
 
 pedestal is scenery in third chamber. It is an open openable container.
 
@@ -115,7 +125,9 @@ Fourth Chamber is a room. "A ceramic room with four ceramic pyramids.
 
 The Second Chamber is to the north and the Third Chamber is to the west."
 
-pyramids is scenery in fourth chamber. "A ceramic pyramid, Perhaps it could be pushed?"
+pyramids is scenery in fourth chamber. "A set of ceramic pyramids, Perhaps it could be pushed?"
+
+pyramid is scenery in fourth chamber. "A ceramic pyramid, Perhaps it could be pushed?"
 
 orb is a thing. The description of the orb is "A clear glass orb, similar to something that a fortune teller might use, but smaller."
 
@@ -136,7 +148,7 @@ instead of taking orb:
 	move orb to player;
 	
 instead of dropping orb:
-	say "Why would you want to do that?"
+	say "Don't do that, it's fragile!"
 	
 stand is scenery in secret chamber. It is an open openable container. The description is "A stand made of what looks like glass, but upon closer inspection looks greener than it should be."
 
@@ -145,3 +157,24 @@ gold treasure is a thing. the description is "A solid gold statue of a warrior."
 instead of taking gold treasure:
 	say "[If player is holding the golden beetle] The golden beetle that you are holding jumps onto the treasure and begins the buzz. The treasure duplicates in front of your very eyes! You'll be rich for the rest of your life! [otherwise]You take the treasure and leave the dungeon. This is sure to net you many, many bundles of cash.";
 	end the story saying "You won!".
+	
+[How to win:
+	Examine relics
+	Take granite monument
+	East
+	South
+	Put granite monument onto the pedestal
+	Take orb
+	North
+	West
+	Examine carvings
+	Turn on lever
+	North
+	Put the orb on the stand
+	Take treasure
+	
+	(Alternate ending:
+		To get the alternate ending, you need to be holding the golden beetle when taking the treasure. To get the golden beetle, simply examine yourself. It will scurry to the floor of the ancient hall, and you can get it from there.)]
+		
+
+	

@@ -9,7 +9,7 @@
 
 dungeon
 An Interactive Fiction by kgoodrowe20
-Release 1 / Serial number 190228 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190304 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Ancient Hall
 A hallway with walls of stone, decorated with relics and carvings. The only visible passageway is the wooden door to the east.
@@ -28,6 +28,8 @@ A hallway with walls of stone, decorated with relics and carvings. The only visi
             <child nodeId="node-1164"></child>
             <child nodeId="node-1157"></child>
             <child nodeId="node-1156"></child>
+            <child nodeId="node-1392"></child>
+            <child nodeId="node-1440"></child>
             <child nodeId="node-1150"></child>
             <child nodeId="node-1138"></child>
             <child nodeId="node-1131"></child>
@@ -36,6 +38,7 @@ A hallway with walls of stone, decorated with relics and carvings. The only visi
             <child nodeId="node-1097"></child>
             <child nodeId="node-1096"></child>
             <child nodeId="node-1095"></child>
+            <child nodeId="node-1449"></child>
             <child nodeId="node-1084"></child>
             <child nodeId="node-1054"></child>
             <child nodeId="node-1007"></child>
@@ -59,7 +62,66 @@ A hallway with walls of stone, decorated with relics and carvings. The only visi
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1005"></child>
             <child nodeId="node-1236"></child>
+            <child nodeId="node-1426"></child>
         </children>
+    </item>
+    <item nodeId="node-1426">
+        <command xml:space="preserve">x wooden door</command>
+        <result xml:space="preserve">You see nothing special about the wooden door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1427"></child>
+        </children>
+    </item>
+    <item nodeId="node-1427">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the wooden door)
+
+First Chamber
+A stone room with a stone pillar in the center of the room.
+
+The Second Chamber is to the east, and the Third Chamber is south.
+
+ 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1428"></child>
+        </children>
+    </item>
+    <item nodeId="node-1428">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Third chamber
+ A granite room, with two granite spheres in the room. There appears to be a pedestal in the center of the room. The pedestal is irregular, and can be described more like a pillar with a rectangular hole cut into it.
+
+The First Chamber is to the north and the Fourth Chamber is east. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1429"></child>
+        </children>
+    </item>
+    <item nodeId="node-1429">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Fourth Chamber
+A ceramic room with four ceramic pyramids.
+
+The Second Chamber is to the north and the Third Chamber is to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1430"></child>
+        </children>
+    </item>
+    <item nodeId="node-1430">
+        <command xml:space="preserve">push ceramic pyramids</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1236">
         <command xml:space="preserve">x relic</command>
@@ -2175,6 +2237,24 @@ yuh
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-1449">
+        <command xml:space="preserve">x hallway</command>
+        <result xml:space="preserve">Strange carvings depicting monsters and warriors cover the surface of the old stone.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1450"></child>
+        </children>
+    </item>
+    <item nodeId="node-1450">
+        <command xml:space="preserve">x me</command>
+        <result xml:space="preserve">You're an adventurer, and you climb into dungeons like these for treasure in order to make a living. You are dressed in jeans and a t-shirt.
+
+You realize that there's a golden beetle on your shirt, and you flick it onto the ground. It scurries away and starts glowing at the center of the ancient hall floor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1095">
         <command xml:space="preserve">x granite monument</command>
         <result xml:space="preserve">You can't see any such thing.
@@ -2792,6 +2872,84 @@ A hallway with walls of stone, decorated with relics and carvings. The only visi
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-1440">
+        <command xml:space="preserve">purloin orb</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1441"></child>
+        </children>
+    </item>
+    <item nodeId="node-1441">
+        <command xml:space="preserve">drop orb</command>
+        <result xml:space="preserve">Don't do that, it's fragile!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1446"></child>
+            <child nodeId="node-1442"></child>
+        </children>
+    </item>
+    <item nodeId="node-1442">
+        <command xml:space="preserve">purloin monument</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1443"></child>
+        </children>
+    </item>
+    <item nodeId="node-1443">
+        <command xml:space="preserve">drop monument</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1446">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  orb
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1447"></child>
+        </children>
+    </item>
+    <item nodeId="node-1447">
+        <command xml:space="preserve">throw orb</command>
+        <result xml:space="preserve">Don't do that, it's fragile!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1448"></child>
+        </children>
+    </item>
+    <item nodeId="node-1448">
+        <command xml:space="preserve">kkkkkkkk</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1392">
+        <command xml:space="preserve">purloin monument</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1393"></child>
+        </children>
+    </item>
+    <item nodeId="node-1393">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  granite monument
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1156">
         <command xml:space="preserve">placing</command>
         <result xml:space="preserve">That's not a verb I recognise.
@@ -3342,7 +3500,163 @@ The Second Chamber is to the east, and the Third Chamber is south.
     </item>
     <item nodeId="node-1212">
         <command xml:space="preserve">x stone pillar</command>
+        <result xml:space="preserve">A dark grey pillar made of solid stone. Perhaps it could be pushed?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1456"></child>
+        </children>
+    </item>
+    <item nodeId="node-1456">
+        <command xml:space="preserve">x pillar</command>
+        <result xml:space="preserve">A dark grey pillar made of solid stone. Perhaps it could be pushed?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1457"></child>
+        </children>
+    </item>
+    <item nodeId="node-1457">
+        <command xml:space="preserve">x stone</command>
         <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1458"></child>
+        </children>
+    </item>
+    <item nodeId="node-1458">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Second Chamber
+A marble room with two marble pillars in opposite corners of the room.
+
+The First Chamber is to the west, and the Fourth Chamber is south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1459"></child>
+        </children>
+    </item>
+    <item nodeId="node-1459">
+        <command xml:space="preserve">x pillars</command>
+        <result xml:space="preserve">A pillar made of marble. Perhaps it could be pushed?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1460"></child>
+        </children>
+    </item>
+    <item nodeId="node-1460">
+        <command xml:space="preserve">x marble pillars</command>
+        <result xml:space="preserve">A pillar made of marble. Perhaps it could be pushed?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1468"></child>
+        </children>
+    </item>
+    <item nodeId="node-1468">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Fourth Chamber
+A ceramic room with four ceramic pyramids.
+
+The Second Chamber is to the north and the Third Chamber is to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1469"></child>
+        </children>
+    </item>
+    <item nodeId="node-1469">
+        <command xml:space="preserve">x pyramids</command>
+        <result xml:space="preserve">A set of ceramic pyramids, Perhaps it could be pushed?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1470"></child>
+        </children>
+    </item>
+    <item nodeId="node-1470">
+        <command xml:space="preserve">x ceramic pyramids</command>
+        <result xml:space="preserve">A set of ceramic pyramids, Perhaps it could be pushed?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1471"></child>
+        </children>
+    </item>
+    <item nodeId="node-1471">
+        <command xml:space="preserve">x pyramid</command>
+        <result xml:space="preserve">A ceramic pyramid, Perhaps it could be pushed?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1494"></child>
+        </children>
+    </item>
+    <item nodeId="node-1494">
+        <command xml:space="preserve">x ceramid pyramid</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1495"></child>
+        </children>
+    </item>
+    <item nodeId="node-1495">
+        <command xml:space="preserve">x ceramic pyramid</command>
+        <result xml:space="preserve">A ceramic pyramid, Perhaps it could be pushed?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1509"></child>
+        </children>
+    </item>
+    <item nodeId="node-1509">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Third chamber
+ A granite room, with two granite spheres in the room. There appears to be a pedestal in the center of the room. The pedestal is irregular, and can be described more like a pillar with a rectangular hole cut into it.
+
+The First Chamber is to the north and the Fourth Chamber is east. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1510"></child>
+        </children>
+    </item>
+    <item nodeId="node-1510">
+        <command xml:space="preserve">x spheres</command>
+        <result xml:space="preserve">A set of granite spheres. Perhaps they could be rolled?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1511"></child>
+        </children>
+    </item>
+    <item nodeId="node-1511">
+        <command xml:space="preserve">x sphere</command>
+        <result xml:space="preserve">A set of granite spheres. Perhaps they could be rolled?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1528"></child>
+        </children>
+    </item>
+    <item nodeId="node-1528">
+        <command xml:space="preserve">x pedestal</command>
+        <result xml:space="preserve">Perhaps some kind of item belongs in here?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1529"></child>
+        </children>
+    </item>
+    <item nodeId="node-1529">
+        <command xml:space="preserve">push pedestal</command>
+        <result xml:space="preserve">It is fixed in place.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -3351,7 +3665,14 @@ The Second Chamber is to the east, and the Third Chamber is south.
         <command xml:space="preserve">x pillar</command>
         <result xml:space="preserve">A dark grey pillar made of solid stone. Perhaps it could be pushed?
 
-The wall shivers and shakes as the carvings move away to reveal a secret chamber.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1453"></child>
+        </children>
+    </item>
+    <item nodeId="node-1453">
+        <command xml:space="preserve">x stone pillar</command>
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -3421,6 +3742,7 @@ The First Chamber is to the north and the Fourth Chamber is east.
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1223"></child>
             <child nodeId="node-1339"></child>
+            <child nodeId="node-1396"></child>
             <child nodeId="node-1220"></child>
         </children>
     </item>
@@ -3447,6 +3769,339 @@ The First Chamber is to the north and the Fourth Chamber is east.
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1396">
+        <command xml:space="preserve">put monument on pedestal</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1397"></child>
+        </children>
+    </item>
+    <item nodeId="node-1397">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Third chamber
+ A granite room, with two granite spheres in the room. There appears to be a pedestal in the center of the room. The pedestal is irregular, and can be described more like a pillar with a rectangular hole cut into it.
+
+The First Chamber is to the north and the Fourth Chamber is east. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1398"></child>
+        </children>
+    </item>
+    <item nodeId="node-1398">
+        <command xml:space="preserve">x pedestal</command>
+        <result xml:space="preserve">Perhaps some kind of item belongs in here?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1399"></child>
+        </children>
+    </item>
+    <item nodeId="node-1399">
+        <command xml:space="preserve">put monument on pedestal</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1400"></child>
+        </children>
+    </item>
+    <item nodeId="node-1400">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying nothing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1401"></child>
+        </children>
+    </item>
+    <item nodeId="node-1401">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+First Chamber
+A stone room with a stone pillar in the center of the room.
+
+The Second Chamber is to the east, and the Third Chamber is south.
+
+ 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1402"></child>
+        </children>
+    </item>
+    <item nodeId="node-1402">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Ancient Hall
+A hallway with walls of stone, decorated with relics and carvings. The only visible passageway is the wooden door to the east.
+
+ 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1403"></child>
+        </children>
+    </item>
+    <item nodeId="node-1403">
+        <command xml:space="preserve">x relics</command>
+        <result xml:space="preserve">Various clay pots and urns are scattered against the edge of the hallway. Between two particularly mishapen pieces of ceramic, you spot a granite monument.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1404"></child>
+        </children>
+    </item>
+    <item nodeId="node-1404">
+        <command xml:space="preserve">take monument</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1405"></child>
+        </children>
+    </item>
+    <item nodeId="node-1405">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+First Chamber
+A stone room with a stone pillar in the center of the room.
+
+The Second Chamber is to the east, and the Third Chamber is south.
+
+ 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1406"></child>
+        </children>
+    </item>
+    <item nodeId="node-1406">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Third chamber
+ A granite room, with two granite spheres in the room. There appears to be a pedestal in the center of the room. The pedestal is irregular, and can be described more like a pillar with a rectangular hole cut into it.
+
+The First Chamber is to the north and the Fourth Chamber is east. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1407"></child>
+        </children>
+    </item>
+    <item nodeId="node-1407">
+        <command xml:space="preserve">put monument on pedestal</command>
+        <result xml:space="preserve">The monument begins to vibrate, and the eyes glow. It's mouth opens and reveals a glass orb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1408"></child>
+        </children>
+    </item>
+    <item nodeId="node-1408">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1409"></child>
+        </children>
+    </item>
+    <item nodeId="node-1409">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+First Chamber
+A stone room with a stone pillar in the center of the room.
+
+The Second Chamber is to the east, and the Third Chamber is south.
+
+ 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1410"></child>
+        </children>
+    </item>
+    <item nodeId="node-1410">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Ancient Hall
+A hallway with walls of stone, decorated with relics and carvings. The only visible passageway is the wooden door to the east.
+
+ 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1411"></child>
+        </children>
+    </item>
+    <item nodeId="node-1411">
+        <command xml:space="preserve">x carvings</command>
+        <result xml:space="preserve">Upon closer inspection of the carvings, you can see that one of the warriors" swords is actually a lever in the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1412"></child>
+        </children>
+    </item>
+    <item nodeId="node-1412">
+        <command xml:space="preserve">turn on lever</command>
+        <result xml:space="preserve">The wall shivers and shakes as the carvings move away to reveal a secret chamber to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1413"></child>
+        </children>
+    </item>
+    <item nodeId="node-1413">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Secret Chamber
+A room made of carved out stone. You can see a glass stand here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1414"></child>
+        </children>
+    </item>
+    <item nodeId="node-1414">
+        <command xml:space="preserve">place orb on stand</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1415"></child>
+        </children>
+    </item>
+    <item nodeId="node-1415">
+        <command xml:space="preserve">put orb on stand</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1416"></child>
+        </children>
+    </item>
+    <item nodeId="node-1416">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Ancient Hall
+A hallway with walls of stone, decorated with relics and carvings. The only visible passageway is the wooden door to the east.
+
+ 
+
+You can also see a lever here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1417"></child>
+        </children>
+    </item>
+    <item nodeId="node-1417">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+First Chamber
+A stone room with a stone pillar in the center of the room.
+
+The Second Chamber is to the east, and the Third Chamber is south.
+
+ 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1418"></child>
+        </children>
+    </item>
+    <item nodeId="node-1418">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Third chamber
+ A granite room, with two granite spheres in the room. There appears to be a pedestal in the center of the room. The pedestal is irregular, and can be described more like a pillar with a rectangular hole cut into it.
+
+The First Chamber is to the north and the Fourth Chamber is east. 
+
+You can see granite monument and orb here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1419"></child>
+        </children>
+    </item>
+    <item nodeId="node-1419">
+        <command xml:space="preserve">take orb</command>
+        <result xml:space="preserve">The monument spins inside the pedestal, and the pedestal sinks into the floor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1420"></child>
+        </children>
+    </item>
+    <item nodeId="node-1420">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+First Chamber
+A stone room with a stone pillar in the center of the room.
+
+The Second Chamber is to the east, and the Third Chamber is south.
+
+ 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1421"></child>
+        </children>
+    </item>
+    <item nodeId="node-1421">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Ancient Hall
+A hallway with walls of stone, decorated with relics and carvings. The only visible passageway is the wooden door to the east.
+
+ 
+
+You can also see a lever here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1422"></child>
+        </children>
+    </item>
+    <item nodeId="node-1422">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Secret Chamber
+A room made of carved out stone. You can see a glass stand here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1423"></child>
+        </children>
+    </item>
+    <item nodeId="node-1423">
+        <command xml:space="preserve">put orb on stand</command>
+        <result xml:space="preserve">The orb begins to glow and spin similarly to how the monument did. The stand opens to reveal the golden treasure.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1424"></child>
+        </children>
+    </item>
+    <item nodeId="node-1424">
+        <command xml:space="preserve">take treasure</command>
+        <result xml:space="preserve">You take the treasure and leave the dungeon. This is sure to net you many, many bundles of cash.
+
+
+
+    *** You won! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1339">
@@ -3648,9 +4303,12 @@ The First Chamber is to the north and the Fourth Chamber is east.
 Fourth Chamber
 A ceramic room with four ceramic pyramids.
 
+The Second Chamber is to the north and the Third Chamber is to the west.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1224"></child>
+        <children><child nodeId="node-1434"></child>
+            <child nodeId="node-1224"></child>
         </children>
     </item>
     <item nodeId="node-1224">
@@ -3708,6 +4366,68 @@ A stone room with a stone pillar in the center of the room.
         <result xml:space="preserve">
 Second Chamber
 A marble room with two marble pillars in opposite corners of the room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1434">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Second Chamber
+A marble room with two marble pillars in opposite corners of the room.
+
+The First Chamber is to the west, and the Fourth Chamber is south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1435"></child>
+        </children>
+    </item>
+    <item nodeId="node-1435">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Fourth Chamber
+A ceramic room with four ceramic pyramids.
+
+The Second Chamber is to the north and the Third Chamber is to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1436"></child>
+        </children>
+    </item>
+    <item nodeId="node-1436">
+        <command xml:space="preserve">push four ceramic</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1437"></child>
+        </children>
+    </item>
+    <item nodeId="node-1437">
+        <command xml:space="preserve">push ceramic pyramids</command>
+        <result xml:space="preserve">It barely budges.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1438"></child>
+        </children>
+    </item>
+    <item nodeId="node-1438">
+        <command xml:space="preserve">purloin</command>
+        <result xml:space="preserve">(Fourth Chamber)
+[Can't move Fourth Chamber: it would contain itself.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1439"></child>
+        </children>
+    </item>
+    <item nodeId="node-1439">
+        <command xml:space="preserve">purloin all</command>
+        <result xml:space="preserve">(Fourth Chamber)
+[Can't move Fourth Chamber: it would contain itself.]
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
